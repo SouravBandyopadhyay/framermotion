@@ -3,6 +3,7 @@ import React from "react";
 import Leaf from "./Leaf";
 import { motion } from "framer-motion";
 import { leavesContainer } from "../variants";
+
 const LeavesContainer = () => {
   return (
     <motion.div variants={leavesContainer} initial="initial" animate="animate">

@@ -1,7 +1,14 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { motion } from "framer-motion";
 import { leaf, leafWrapper } from "../variants";
-const Leaf = ({ className, imageUrl,animationSpeed }) => {
+interface Props {
+  children?: ReactNode;
+  // any props that come into the component
+  className: string;
+  imageUrl: string;
+  animationSpeed: number;
+}
+const Leaf = ({ className, imageUrl, animationSpeed }: Props) => {
   return (
     <motion.div variants={leafWrapper} className={className}>
       <motion.img
